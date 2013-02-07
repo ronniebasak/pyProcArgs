@@ -1,0 +1,41 @@
+		  ================Py ProcArgs 0.5b==============
+			       ---Sohan Basak---
+			 	==2013, 2, 7==
+______________________________________________________________________________
+This module is designed to simplify the task of Argument processing..
+All CLI based applications need Arguments and Process them..
+
+Not standardized, But some various types of Commands are
+for e.g
+gcc -o a.out example.c
+Or 
+git --version
+
+So, some common categoris are
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+| Shorthand or single letter mapped args:	    |
+| Like -i a.b.c; -o a.b.c.d etc....		    |
+|						    |
+| Long descriptive mapped args.			    |
+| Like --infile a.b.c; --out a.b.c.d etc...	    |
+|						    |
+| Short Flags:					    |
+| Like -h or -v etc.				    |
+|						    |
+| Long Flags:					    |
+| Like --help or --version			    |
+|						    |
+| Unprocessed Commands:				    |
+| Like a.b.c					    |
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Based on this PyProcArgs can map them correctly and can help build a nice 
+application w/o the haste of parsing Arguments.
+
++============================================================================+
+NOTE: It is not good for input files. It is correct but Files can start with 
+- or -- which will fool PyProcArgs into thinking they are flags or mapped
+arguments..
+
+I will upgrade it as soon as I get some free time. Contribution is appreciated
++============================================================================+
